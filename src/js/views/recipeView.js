@@ -140,5 +140,4 @@ class RecipeView extends View {
   }
 }
 
-//exporting instance, not the class itself
 export default new RecipeView();

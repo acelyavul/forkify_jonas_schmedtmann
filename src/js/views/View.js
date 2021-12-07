@@ -37,12 +37,7 @@ export default class View {
 
     newElements.forEach((newEl, i) => {
       const curEl = curElements[i];
-      //console.log(curEl, newEl.isEqualNode(curEl));
-
-      // if (!newEl.isEqualNode(curEl)) {
-      //   curEl.innerHTML = newEl.innerHTML;
-      // }
-      // //update changed TEXT
+  
       if (
         !newEl.isEqualNode(curEl) &&
         newEl.firstChild?.nodeValue.trim() !== ''
@@ -55,7 +50,6 @@ export default class View {
         Array.from(newEl.attributes).forEach(attr =>
           curEl.setAttribute(attr.name, attr.value)
         );
-        //console.log(newEl.attributes);
       }
     });
   }

@@ -2788,8 +2788,7 @@ class RecipeView extends _View.default {
      `;
   }
 
-} //exporting instance, not the class itself
-
+}
 
 var _default = new RecipeView();
 
@@ -2844,11 +2843,7 @@ class View {
     newElements.forEach((newEl, i) => {
       var _newEl$firstChild;
 
-      const curEl = curElements[i]; //console.log(curEl, newEl.isEqualNode(curEl));
-      // if (!newEl.isEqualNode(curEl)) {
-      //   curEl.innerHTML = newEl.innerHTML;
-      // }
-      // //update changed TEXT
+      const curEl = curElements[i];
 
       if (!newEl.isEqualNode(curEl) && ((_newEl$firstChild = newEl.firstChild) === null || _newEl$firstChild === void 0 ? void 0 : _newEl$firstChild.nodeValue.trim()) !== '') {
         curEl.textContent = newEl.textContent;
@@ -2856,7 +2851,7 @@ class View {
 
 
       if (!newEl.isEqualNode(curEl)) {
-        Array.from(newEl.attributes).forEach(attr => curEl.setAttribute(attr.name, attr.value)); //console.log(newEl.attributes);
+        Array.from(newEl.attributes).forEach(attr => curEl.setAttribute(attr.name, attr.value));
       }
     });
   }
@@ -3575,8 +3570,7 @@ class PaginationView extends _View.default {
           </svg>
         </button>
       `;
-    } // Page 1, and there are NO other pages
-
+    }
 
     return '';
   }
@@ -3628,8 +3622,6 @@ exports.default = void 0;
 
 var _View = _interopRequireDefault(require("./View.js"));
 
-var _icons = _interopRequireDefault(require("url:../../img/icons.svg"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 class AddRecipeView extends _View.default {
@@ -3680,6 +3672,6 @@ class AddRecipeView extends _View.default {
 var _default = new AddRecipeView();
 
 exports.default = _default;
-},{"./View.js":"61b7a1b097e16436be3d54c2f1828c73","url:../../img/icons.svg":"863497ade83f05c3cc79c0aa4f7f7478"}]},{},["741fb2e46fc204d60b4b56bc28b13c75","e60a55d217bb64c51088e7fff439336b","175e469a7ea7db1c8c0744d04372621f"], null)
+},{"./View.js":"61b7a1b097e16436be3d54c2f1828c73"}]},{},["741fb2e46fc204d60b4b56bc28b13c75","e60a55d217bb64c51088e7fff439336b","175e469a7ea7db1c8c0744d04372621f"], null)
 
 //# sourceMappingURL=controller.20f20d64.js.map
