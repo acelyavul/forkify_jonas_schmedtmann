@@ -28,4 +28,4 @@ jobs:
         cache: 'npm'
     - run: yarn
     - run: env
-    - run: yarn start
+    - run: yarn build
