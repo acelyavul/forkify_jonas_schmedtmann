@@ -1,0 +1,20 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "Recipe application",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Acelya V",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "2.0.0-beta.1"
+  },
+  "dependencies": {
+    "core-js": "^3.18.2",
+    "fractional": "^1.0.0",
+    "regenerator-runtime": "^0.13.9",
+    "sass": "^1.42.1"
+  }
+}
